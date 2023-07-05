@@ -22,31 +22,39 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 100%);
       }
     </style>
   </head>
-  <body class="grid place-content-center min-h-screen font-Roboto">
-    <main class="flex flex-col p-4 pt-0 space-y-8 lg:flex-row-reverse lg:space-y-0">
+  <body
+    class="grid place-content-center min-h-screen font-Roboto bg-DarkSlateGrey p-4"
+  >
+    <main
+      class="flex flex-col p-4 pt-0 space-y-8 lg:flex-row-reverse lg:space-y-0 lg:max-w-[930px] lg:h-[640px] lg:p-8 bg-white rounded-3xl"
+    >
       <!-- Image div here  -->
-      <div class="mr-[-16px] ml-[-16px]">
+      <div class="mr-[-16px] ml-[-16px] lg:w-1/2 lg:h-full">
         <img
           src="assets/images/illustration-sign-up-mobile.svg"
           alt="illustration sign-up mobile"
-          class="lg:hidden rounded-b-lg w-full"
+          class="lg:hidden rounded-b-lg w-full lg:h-[592px]"
         />
         <img
           src="assets/images/illustration-sign-up-desktop.svg"
-          alt="illustration sign-up mobile"
-          class="hidden lg:block"
+          alt="illustration sign-up desktop"
+          class="hidden lg:block lg:rounded-lg lg:h-full lg:w-full"
         />
       </div>
 
       <!-- Stay updated div here  -->
-      <div class="flex flex-col space-y-4 ">
+      <div class="flex flex-col space-y-4 lg:w-1/2 lg:pr-7">
         <!-- Sign-up form start -->
-        <hi class="text-4xl text-DarkSlateGrey font-bold">Stay updated!</hi>
-        <p class="font-semibold text-CharcoalGrey">Join 60,000+ product managers receiving monthly updates on:</p>
+        <hi class="text-4xl text-DarkSlateGrey font-bold lg:text-5xl lg:mt-16"
+          >Stay updated!</hi
+        >
+        <p class="font-semibold text-CharcoalGrey">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
         <ul class="text-CharcoalGrey font-semibold">
           <div class="flex items-start gap-4 mb-4">
             <div class="w-[22.4px] h-[22.4px]">
@@ -82,17 +90,30 @@
 
         <form action="">
           <fieldset>
-            <div class="mb-1"><label for="email" class="text-DarkSlateGrey font-bold text-sm">Email address</label></div>
-            <input id="email" type="email" placeholder="email@company.com" class="border-[2px] py-2 px-4 rounded-lg placeholder:text-sm w-full outline-Tomato"/>
+            <div class="mb-1">
+              <label for="email" class="text-DarkSlateGrey font-bold text-sm"
+                >Email address</label
+              >
+            </div>
+            <input
+              id="email"
+              type="email"
+              placeholder="email@company.com"
+              class="border-[2px] py-2 px-4 lg:py-3 rounded-lg placeholder:text-sm w-full outline-Tomato lg:w-[85%]"
+            />
           </fieldset>
-          <button class="bg-DarkSlateGrey text-white rounded-md mt-4 py-2 px-8 font-bold w-full">Subscribe to monthly newsletter</button>
+          <button
+            class="bg-DarkSlateGrey text-white rounded-md mt-4 py-2 px-8 lg:py-4 lg:px-16 font-bold text-sm w-full lg:w-auto"
+          >
+            Subscribe to monthly newsletter
+          </button>
         </form>
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        Thanks for subscribing! A confirmation email has been sent to
+        <!-- Thanks for subscribing! A confirmation email has been sent to
         ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message
+        confirm your subscription. Dismiss message -->
         <!-- Success message end -->
       </div>
     </main>
