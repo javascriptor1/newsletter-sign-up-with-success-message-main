@@ -88,7 +88,7 @@
           </div>
         </ul>
 
-        <form action="">
+        <form action="/" method="POST" id="subscribing-form">
           <fieldset>
             <div class="mb-1">
               <label for="email" class="text-DarkSlateGrey font-bold text-sm"
@@ -111,27 +111,28 @@
         </form>
         <!-- Sign-up form end -->
 
-        <!-- Success message start -->
-        <div class="flex flex-col bg-white border border-red-900 justify-start p-4 hidden">
-          <div class="mt-20"><img src="assets/images/icon-success.svg" alt="success icon" class="scale-75"></div>
-          <h1 class="text-3xl text-DarkSlateGrey font-bold mt-4 mb-4">
-            Thanks for subscribing!
-          </h1>
-          <p class="text-CharcoalGrey">
-            A confirmation email has been sent to <span id="userEmail" class="font-bold">ash@loremcompany.com</span>. Please
-            open it and click the button inside to confirm your subscription.
-          </p>
-          <button class="bg-DarkSlateGrey text-white rounded-md py-2 px-4 mt-auto">Dismiss message</button>
-        </div>
-        <!-- Success message end -->
+       
       </div>
     </main>
-
+     <!-- Success message start -->
+     <div class="flex flex-col bg-white justify-start p-8 hidden min-h-screen md:min-h-fit md:max-w-[440px] md:rounded-3xl" id="success-div">
+      <div class="mt-4"><img src="assets/images/icon-success.svg" alt="success icon" class="scale-75"></div>
+      <h1 class="text-4xl text-DarkSlateGrey font-bold mt-4 mb-4">
+        Thanks for subscribing!
+      </h1>
+      <p class="text-CharcoalGrey">
+        A confirmation email has been sent to <span id="userEmail" class="font-bold">ash@loremcompany.com</span>. Please
+        open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="bg-DarkSlateGrey text-white rounded-md py-2 px-4 mt-auto md:mt-8 md:mb-8" id="dismiss-button">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
     <footer class="attribution text-white mt-4">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">MKF</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

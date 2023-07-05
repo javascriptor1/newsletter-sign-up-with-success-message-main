@@ -606,6 +606,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-\[22\.4px\] {
   width: 22.4px;
 }
@@ -728,6 +732,10 @@ video {
   padding: 1rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -838,9 +846,48 @@ blockquote {
   line-height: 1.25rem;
 }
 
+@media (min-width: 768px) {
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:min-h-fit {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+
+  .md\:max-w-\[440px\] {
+    max-width: 440px;
+  }
+
+  .md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:block {
@@ -863,6 +910,31 @@ blockquote {
     height: 100%;
   }
 
+  .lg\:h-\[465px\] {
+    height: 465px;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .lg\:max-h-\[465px\] {
+    max-height: 465px;
+  }
+
+  .lg\:max-h-\[250px\] {
+    max-height: 250px;
+  }
+
+  .lg\:min-h-fit {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -879,8 +951,44 @@ blockquote {
     width: 100%;
   }
 
+  .lg\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .lg\:w-\[485px\] {
+    width: 485px;
+  }
+
   .lg\:max-w-\[930px\] {
     max-width: 930px;
+  }
+
+  .lg\:max-w-\[485px\] {
+    max-width: 485px;
+  }
+
+  .lg\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
+  .lg\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .lg\:max-w-\[380px\] {
+    max-width: 380px;
+  }
+
+  .lg\:max-w-\[400px\] {
+    max-width: 400px;
+  }
+
+  .lg\:max-w-\[420px\] {
+    max-width: 420px;
+  }
+
+  .lg\:max-w-\[440px\] {
+    max-width: 440px;
   }
 
   .lg\:flex-row-reverse {
@@ -891,6 +999,14 @@ blockquote {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .lg\:whitespace-pre {
+    white-space: pre;
   }
 
   .lg\:rounded-3xl {
