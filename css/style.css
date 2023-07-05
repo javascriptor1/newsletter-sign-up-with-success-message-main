@@ -622,10 +622,6 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -723,8 +719,21 @@ a {
 
 /* show colors inside vs code */
 
+@media (min-width:1024px) {
+  button:hover {
+    background: linear-gradient(128deg, rgba(255,84,115,1) 15%, rgba(254,91,99,1) 39%, rgba(255,98,87,1) 66%, rgba(255,98,86,1) 67%, rgba(255,101,75,1) 80%, rgba(255,105,61,1) 89%);
+    color: white;
+  }
+
+  input:focus {
+    outline: 0.5px solid black;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+  }
+}
+
 blockquote {
-  color: hsl(4, 100%, 67%);
+  color: #ff6257;
   color: hsl(234, 29%, 20%);
   color: #36384e;
   color : hsl(231, 7%, 60%);
@@ -796,12 +805,12 @@ blockquote {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:rounded-lg {
-    border-radius: 0.5rem;
-  }
-
   .lg\:rounded-3xl {
     border-radius: 1.5rem;
+  }
+
+  .lg\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .lg\:p-4 {
