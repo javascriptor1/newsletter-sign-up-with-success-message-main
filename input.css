@@ -21,7 +21,12 @@ a {
     color: white;
 }
 
-/* show colors inside vs code */
+.input-error {
+    background-color: #ffe8e6;
+    color: hsl(4, 100%, 67%);
+}
+
+
 
 @media (min-width:1024px) {
     button:hover {
@@ -36,11 +41,3 @@ a {
     }
 }
 
-blockquote {
-    color: #ff6257;
-
-color: hsl(234, 29%, 20%);
-color: #36384e;
-color : hsl(231, 7%, 60%);
-color: hsl(0, 0%, 100%);
-}
