@@ -103,7 +103,8 @@
             />
           </fieldset>
           <button
-            class="bg-DarkSlateGrey text-white rounded-md mt-4 py-2 px-8 lg:py-4 lg:px-16 font-bold text-sm w-full lg:w-auto"
+          id="submit-button"  
+          class="bg-DarkSlateGrey text-white rounded-md mt-4 py-2 px-8 lg:py-4 lg:px-16 font-bold text-sm w-full lg:w-auto"
           >
             Subscribe to monthly newsletter
           </button>
@@ -111,9 +112,17 @@
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        <!-- Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message -->
+        <div class="flex flex-col bg-white border border-red-900 justify-start p-4 hidden">
+          <div class="mt-20"><img src="assets/images/icon-success.svg" alt="success icon" class="scale-75"></div>
+          <h1 class="text-3xl text-DarkSlateGrey font-bold mt-4 mb-4">
+            Thanks for subscribing!
+          </h1>
+          <p class="text-CharcoalGrey">
+            A confirmation email has been sent to <span id="userEmail" class="font-bold">ash@loremcompany.com</span>. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+          <button class="bg-DarkSlateGrey text-white rounded-md py-2 px-4 mt-auto">Dismiss message</button>
+        </div>
         <!-- Success message end -->
       </div>
     </main>
