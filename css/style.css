@@ -423,17 +423,17 @@ video {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
-  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
 
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
-  src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
 
   font-weight: 700;
 }
@@ -620,12 +620,12 @@ video {
   justify-content: flex-start;
 }
 
-.gap-28 {
-  gap: 7rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-\[130px\] {
+  gap: 130px;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -708,6 +708,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -749,9 +754,17 @@ a {
   color: hsl(4, 100%, 67%);
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   button:hover {
-    background: linear-gradient(128deg, rgba(255,84,115,1) 15%, rgba(254,91,99,1) 39%, rgba(255,98,87,1) 66%, rgba(255,98,86,1) 67%, rgba(255,101,75,1) 80%, rgba(255,105,61,1) 89%);
+    background: linear-gradient(
+      128deg,
+      rgba(255, 84, 115, 1) 15%,
+      rgba(254, 91, 99, 1) 39%,
+      rgba(255, 98, 87, 1) 66%,
+      rgba(255, 98, 86, 1) 67%,
+      rgba(255, 101, 75, 1) 80%,
+      rgba(255, 105, 61, 1) 89%
+    );
     color: white;
   }
 
@@ -759,6 +772,14 @@ a {
     outline: 0.5px solid black;
     border-bottom-width: 1px;
     border-bottom-color: black;
+  }
+}
+
+/* This media query is to align error message on the right position for iphone 13 Pro max (width:428px) */
+
+@media (min-width: 428px) and (max-width: 500px) {
+  #error-div {
+    gap: 200px;
   }
 }
 
@@ -770,6 +791,13 @@ a {
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -788,6 +816,10 @@ a {
 
   .md\:max-w-\[440px\] {
     max-width: 440px;
+  }
+
+  .md\:gap-56 {
+    gap: 14rem;
   }
 
   .md\:rounded-3xl {
@@ -844,6 +876,10 @@ a {
     flex-direction: row-reverse;
   }
 
+  .lg\:gap-28 {
+    gap: 7rem;
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -890,4 +926,3 @@ a {
     line-height: 1;
   }
 }
-

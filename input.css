@@ -2,42 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-
-    @font-face {
-        font-family: 'Roboto';
-        src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
-        font-weight: 400;
-    }
-    @font-face {
-        font-family: 'Roboto';
-        src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
-        font-weight: 700;
-    }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 .input-error {
-    background-color: #ffe8e6;
-    color: hsl(4, 100%, 67%);
+  background-color: #ffe8e6;
+  color: hsl(4, 100%, 67%);
 }
 
+@media (min-width: 1024px) {
+  button:hover {
+    background: linear-gradient(
+      128deg,
+      rgba(255, 84, 115, 1) 15%,
+      rgba(254, 91, 99, 1) 39%,
+      rgba(255, 98, 87, 1) 66%,
+      rgba(255, 98, 86, 1) 67%,
+      rgba(255, 101, 75, 1) 80%,
+      rgba(255, 105, 61, 1) 89%
+    );
+    color: white;
+  }
 
-
-@media (min-width:1024px) {
-    button:hover {
-        background: linear-gradient(128deg, rgba(255,84,115,1) 15%, rgba(254,91,99,1) 39%, rgba(255,98,87,1) 66%, rgba(255,98,86,1) 67%, rgba(255,101,75,1) 80%, rgba(255,105,61,1) 89%);
-        color: white;
-    }
-
-    input:focus {
-        outline: 0.5px solid black;
-        border-bottom-width: 1px;
-        border-bottom-color: black;
-    }
+  input:focus {
+    outline: 0.5px solid black;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+  }
 }
 
+/* This media query is to align error message on the right position for iphone 13 Pro max (width:428px) */
+@media (min-width: 428px) and (max-width: 500px) {
+  #error-div {
+    gap: 200px;
+  }
+}
